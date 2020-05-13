@@ -24,6 +24,7 @@ router.post("/booking", (req, res) => {
         } else {
             const newBooking = new Booking({
                 name: req.body.name,
+                room_size: req.body.room_size,
                 emailing_address: req.body.emailing_address,
                 phone_number: req.body.phone_number,
                 company_name: req.body.company_name,

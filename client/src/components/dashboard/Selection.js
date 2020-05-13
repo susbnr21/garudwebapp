@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import Background from '../../assets/black.jpg';
 import logo from '../../assets/garud.png';
 
-import StruckModal from '../modal/StruckModal';
-import MtruckModal from '../modal/MtruckModal';
-import LtruckModal from '../modal/LtruckModal';
-import BtruckModal from '../modal/BtruckModal';
+// Importing Modals
+import One from '../modal/One';
+import Two from '../modal/Two';
+import Three from '../modal/Three';
+import Four from '../modal/Four';
+import Five from '../modal/Five';
 
+// Importing Navbar
 import Navbar from "../layout/Navbar.js";
 
 
@@ -24,9 +27,7 @@ class Selection extends Component {
                         <img src={logo} alt="Logo" height='120' width='150'/>
                     </logo>
 
-                        {/* <div style={{margin: 10}}></div> */}
-
-                        {/* FOR VEHICLE SELECTION */}
+                        {/* FOR OFFICE SELECTION */}
                         <div>
                             <h4>
                                 <p className="flow-text black-text text-darken-1" 
@@ -37,15 +38,11 @@ class Selection extends Component {
                             </h4>
                             
                             <div>
-                                <StruckModal className="hoverable"/>
-
-                                <MtruckModal className="hoverable"/>
-                            </div>
-
-                            <div>
-                                <LtruckModal className="hoverable"/>
-
-                                <BtruckModal className="hoverable"/>
+                                <One className="hoverable"/>
+                                <Two className="hoverable"/>
+                                <Three className="hoverable"/>
+                                <Four className="hoverable"/>
+                                <Five className="hoverable"/>
                             </div>
 
                             <div style={{margin: 40}}/>
@@ -55,9 +52,6 @@ class Selection extends Component {
                         <div style={{margin: 10}}></div>
 
                         <div>
-                            <text style={{color: 'red', fontWeight: 'bold', fontFamily: 'Arial'}}>
-                                (Please pin point your location you are shifting to in the map section.)
-                            </text>
 
                             <div style={{margin: 10}}></div>
 

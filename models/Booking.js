@@ -6,6 +6,9 @@ const BookingSchema = new Schema({
     name: {
         type: String,
     },
+    room_size: {
+        type: String,
+    },
     emailing_address: {
         type: String,
         required: true
