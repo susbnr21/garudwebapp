@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Background from '../../assets/boxs.jpeg';
-import logo from '../../assets/Logo.png';
+import Background from '../../assets/black.jpg';
+import logo from '../../assets/garud.png';
 
 import StruckModal from '../modal/StruckModal';
 import MtruckModal from '../modal/MtruckModal';
@@ -21,7 +21,7 @@ class Selection extends Component {
                 <div className="row">
                     <div className="landing-copy col s12 center-align" style={{marginTop: "40px"}}>
                     <logo className='logo' style={{display: 'block'}}>
-                        <img src={logo} alt="Logo" height='120' width='120'/>
+                        <img src={logo} alt="Logo" height='120' width='150'/>
                     </logo>
 
                         {/* <div style={{margin: 10}}></div> */}
@@ -31,8 +31,8 @@ class Selection extends Component {
                             <h4>
                                 <p className="flow-text black-text text-darken-1" 
                                     style={{fontFamily: "Arial", fontSize: 25, fontWeight: 'bold', textDecoration: 'underline'}}>
-                                    Select Your Preferred Truck Size {" "}
-                                    <span style={{ fontFamily: "monospace" }}></span> 🚛
+                                    Select Your Office Size {" "}
+                                    <span style={{ fontFamily: "monospace" }}></span> 
                                 </p>
                             </h4>
                             
@@ -47,6 +47,8 @@ class Selection extends Component {
 
                                 <BtruckModal className="hoverable"/>
                             </div>
+
+                            <div style={{margin: 40}}/>
 
                         </div>
 
@@ -71,7 +73,7 @@ class Selection extends Component {
                                 type="submit" 
                                 className="btn btn-large white-text waves-effect waves-light hoverable blue accent-3"
                                 >
-                                Map
+                                Gallery
                             </Link>
 
                             <div style={{margin: 50}}></div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Background from '../../assets/boxs.jpeg';
+import Background from '../../assets/black.jpg';
 import { Link } from "react-router-dom";
 import logo from '../../assets/garud.png';
 
@@ -11,7 +11,7 @@ class About extends Component{
             <div>
                 <Navbar/>
 
-                <div style={{ height: '760px', width: '100%', overflow: 'scroll'}}>
+                <div style={{backgroundImage: `url(${Background})`, height: '760px', width: '100%', overflow: 'scroll'}}>
                     <div className='row'>
                         <div className="landing-copy col s12 center-align" style={{marginTop: "40px"}}>
 

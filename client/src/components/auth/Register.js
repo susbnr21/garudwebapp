@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
 import logo from '../../assets/garud.png';
-// import Background from '../../assets/boxs.jpeg';
+import Background from '../../assets/white.jpg';
 
 class Register extends Component {
   constructor() {
@@ -55,10 +55,10 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
-      <div style={{ height: '823px', width: '100%', overflow: 'scroll'}}>
+      <div style={{backgroundImage: `url(${Background})`, height: '823px', width: '100%', overflow: 'scroll'}}>
         <div className="container">
           <div className="row">
-            <logo className='logo' style={{display: 'block'}}>
+            <logo className='logo' style={{display: 'block', marginTop: 40}}>
                   <img src={logo} alt="Logo" height='100' width='150'/>
             </logo>
             <div className="col s8 offset-s2" >

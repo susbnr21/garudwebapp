@@ -3,18 +3,13 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { Link } from "react-router-dom";
-// import Background from '../../assets/boxs.jpeg';
-// import axios from 'axios';
+import Background from '../../assets/black.jpg';
+
 
 import Navbar from "../layout/Navbar.js";
 
 
 class Dashboard extends Component {
-    
-  onLogoutClick = e => {
-    e.preventDefault();
-    this.props.logoutUser();
-  };
 
   render() {
     const { user } = this.props.auth;
@@ -22,15 +17,15 @@ class Dashboard extends Component {
     return (
       <div>
       <Navbar/>
-      <div style={{ height: '760px', width: '100%'}}>
+      <div style={{backgroundImage: `url(${Background})`, height: '760px', width: '100%'}}>
         <div style={{ height: "75vh" }} className="container valign-wrapper">
-          <div className="row" style={{marginTop: "380px"}}>
+          <div className="row" style={{marginTop: "150px"}}>
             <div className="landing-copy col s12 center-align">
               <h4>
                 <b>Hey there,</b> {user.name.split(" ")[0]}
                 {this.testfunction}
                 <p className="flow-text black-text text-darken-1" style={{fontFamily: "Arial", fontWeight: 'bold'}}>
-                  Welcome to Garud{" "}
+                  Welcome to Garud Services{" "}
                   <span style={{ fontFamily: "monospace"}}></span> 👏
                 </p>
               </h4>
@@ -48,19 +43,6 @@ class Dashboard extends Component {
                 Next
               </Link>
             </div>
-            <div style= {{marginTop: '420px'}}>
-              <button
-                  style={{
-                    width: "100px",
-                    letterSpacing: "1.5px",
-                    borderRadius: 3
-                  }}
-                  onClick={this.onLogoutClick}
-                  className="btn btn-small waves-effect waves-light hoverable red accent-3"
-                >
-                  LogOut
-              </button>
-              </div>
           </div>
         </div>
       </div>
