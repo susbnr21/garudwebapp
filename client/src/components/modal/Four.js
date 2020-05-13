@@ -65,13 +65,13 @@ class Four extends Component{
                         <div style={{padding: 20}}>
                             <text style={{fontWeight: 'bold', color: 'orange'}}>YOUR DETAILS HERE</text>
                         </div>
-                        <div className="input-field col s6" value={this.state.name}>
-                            <input disabled value={user.name} id="disabled" type="text" className="validate"/>
+                        <div className="disabled-input-field col s6" value={this.state.name}>
                             <label for="disabled">Name</label>
+                            <input disabled value={user.name} id="disabled" type="text" className="validate"/>
                         </div>
-                        <div className="input-field col s6">
-                            <input disabled value="4000 SQFT. OFFICE ROOM" id="disabled" type="text" className="validate"/>
+                        <div className="disabled-input-field col s6">
                             <label for="disabled">Office Size</label>
+                            <input disabled value="4000 SQFT. OFFICE ROOM" id="disabled" type="text" className="validate"/>
                         </div>
 
                         <div className="input-field col s6">
