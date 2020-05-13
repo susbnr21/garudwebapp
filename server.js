@@ -7,7 +7,7 @@ const cors = require("cors");
 const app = express();
 const users = require("./routes/api/users");
 const trucks = require("./routes/api/trucks");
-// const admins = require("./routes/api/admins");
+const bookings = require("./routes/api/bookings");
 
 // Bodyparser middleware
 app.use(
@@ -38,19 +38,9 @@ require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
 app.use("/api/trucks", trucks);
-// app.use("/api/admins", admins);
+app.use("/api/bookings", bookings);
 
 app.use(cors());
-
-// importing vehicle
-// const vehicles = require('./app/controller/vehicle.contoller');
-// const usersinfo = require('./app/controller/user.controller');
-
-//for vehicle
-// app.post('/vehicles', vehicles.create);
-
-// //for users
-// app.get('/usersinfo', usersinfo.findAll);
 
 const port = process.env.PORT || 8000; // process.env.port is Heroku's port if you choose to deploy the app there
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));

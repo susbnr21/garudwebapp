@@ -21,5 +21,4 @@ module.exports = function validateInfoInput(data){
         errors,
         isValid: isEmpty(errors)
     };
-
 };
